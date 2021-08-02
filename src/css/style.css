@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+:root{
+     --lead1:#464a59;
+     --lead2:#22252e;
+     --purple:#db5572;
+     --black:#1d1e2a;
+     --shadow: 0 8px 8px;
+     --color_shadow:#00000033;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    height:auto;
+
+}
+.container_header{
+    width: 100%;
+    height:100vh;
+    background:linear-gradient(180deg,#1d1e2a 0%,#22252e 100%);
+    
+}
+ .navbar{
+      /* width: 100%; */
+      color:#fff;
+      height: 70px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+     
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:inherit;
+    margin: 0 20px;
+  
+}
+.nav_container .left{
+        font-size:24px;
+} 
+.right a{
+     display: inline-block;
+     color: inherit;
+     text-decoration: none;
+     font-size:300;
+     padding:10px;
+     /* color */
+          /* background:yellow; */
+}
+ a.link-active{
+    font-weight: 700;
+    color: var(--purple);
+}
+.header_body{
+    height: calc(100vh-70px);
+    display:flex;
+    padding:0;
+    align-items: center;
+}
+.my-image{
+    object-fit: cover;
+    /* border-radius:250px;
+    height:250px;
+    height:250px;
+    border:2px solid black; */
+
+}
+.textheader h1{
+    font-size: 56px;
+    font-weight: 300;
+    color:#fff;
+}
+.textheader button{
+    padding:20px 30px;
+    background: var(--purple);
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow:var(--shadow) var(--color_shadow);
+}
+.container_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    padding: 30px 0;
+    overflow:hidden;
+    background-color:var(--black);
+    border-radius: 10px;
+    position: relative;
+    text-align:right;
+    margin-bottom:60px;
+    box-shadow: 0 0 6px var(--shadow);
+}
+.card_image{
+    text-align: left;
+  width:95%;
+  height:200px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+.card_text{
+    width:95%;
+    padding-right: 25px;
+    margin-left: auto;
+}
